@@ -201,7 +201,7 @@ def OpenTunnel(PORT: int = 7777):
             break
 
     if url:
-        print(f"\n🌐 Public URL (paste to TradingView): {url}\n")
+        print(f"\n🌐 Public URL: {url}\n")
     else:
         print("\n⚠️ Couldn't auto-detect trycloudflare URL. Here are recent cloudflared logs:")
         print("\n".join(buf[-20:]) or "(no output yet)")
